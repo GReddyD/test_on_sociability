@@ -9,4 +9,4 @@ while testq.next_question == true do
 
 end
 
-testq.results_test(testq.gets_balls)
+testq.results_test(testq.count_balls)
