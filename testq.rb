@@ -92,28 +92,28 @@ class TestQ
     end
   end
 
-  def gets_balls
+  def cont_balls
     return @ball_answer
   end
 
-  def results_test(gets_balls)
+  def results_test(cont_balls)
     
-    puts "Ваше количество баллов: #{gets_balls.to_s} \n\r"
+    puts "Ваше количество баллов: #{cont_balls.to_s} \n\r"
 
     #Выводим ответ пользователю из массива @results_test по результату баллов в ball_answer
-    if (gets_balls >= 30)
+    if (cont_balls >= 30)
       puts @results_test[0]
-    elsif (gets_balls >= 25 && gets_balls <= 29)
+    elsif (cont_balls >= 25 && cont_balls <= 29)
       puts @results_test[1]
-    elsif (gets_balls >= 19 && gets_balls <= 24)
+    elsif (cont_balls >= 19 && cont_balls <= 24)
       puts @results_test[2]
-    elsif (gets_balls >= 14 && gets_balls <= 18)
+    elsif (cont_balls >= 14 && cont_balls <= 18)
       puts @results_test[3]
-    elsif (gets_balls >= 9 && gets_balls <= 13)
+    elsif (cont_balls >= 9 && cont_balls <= 13)
       puts @results_test[4]
-    elsif (gets_balls >= 4 && gets_balls <= 8)
+    elsif (cont_balls >= 4 && cont_balls <= 8)
       puts @results_test[5]
-    else (gets_balls <= 3)
+    else (cont_balls <= 3)
       puts @results_test[6]
     end   
   end
